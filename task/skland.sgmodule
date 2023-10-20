@@ -1,0 +1,8 @@
+#!name=森空岛签到
+#!desc=用于 Surge 获取森空岛签到任务所需各项参数的重写文件
+
+[Script]
+森空岛签到Cookie = type=http-response,pattern=^https://as.hypergryph.com/user/info/v1/basic,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chouchoui/kayanouriko.quantumultx-skland-auto-sign/beta/src/skland.token.js,script-update-interval=0
+
+[MITM]
+hostname = %APPEND% as.hypergryph.com
